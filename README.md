@@ -1,2 +1,2 @@
-# Lanchonete da Lu
+# Mark's Snack
  Lanchonete criada em angular
