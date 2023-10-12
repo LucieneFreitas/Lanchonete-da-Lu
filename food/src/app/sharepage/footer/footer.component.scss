@@ -1,0 +1,32 @@
+.footer {
+  overflow: hidden;
+  position: fixed;/*permite que um elemento role com o conteúdo da página até que atinja uma posição específica*/
+  background-color: rgb(31, 30, 30);
+  padding: 10px 20px;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+
+h1 {
+  color: rgb(199, 192, 192);
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+
+
+a {
+  color: rgb(199, 192, 192);
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+
+a:hover {
+  color: rgb(209, 160, 1);
+}
+
+i {
+  padding: 0px 10px;
+}
