@@ -1,1 +1,16 @@
-<p>menu works!</p>
+<section>
+  <div class="container mt-5">
+    <h1 class="text-center">Os Favoritos</h1>
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let food of foodData">
+        <div class="foodbox mb-5">
+          <img src="{{food.foodImg}}" />
+          <h1>{{food.foodName}}</h1>
+          <p>{{food.foodDetail}}</p>
+          <p>{{food.foodPrice | currency:'BRL'}}</p>
+          <a class="btn_pedido">Fazer Pedido <i class="bi bi-bag-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>t

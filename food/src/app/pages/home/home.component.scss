@@ -80,6 +80,32 @@
     }
 }
 
+.foodbox {
+  padding: 10px 5px;
+
+  img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;//é usada para garantir que a imagem preencha todo o espaço do elemento pai, sem distorcer a proporção da imagem original.
+    border-radius: 5px;
+  }
+
+    h1{
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+}
+
+.maisOpcoes{
+  text-decoration: none;
+  background-color: #f44336;
+  color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
 
 
 
