@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-sobre',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sobre.component.scss']
 })
 export class SobreComponent {
-
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Sobre');
+  }
 }

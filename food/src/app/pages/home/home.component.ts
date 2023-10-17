@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { OrderDetailService } from 'src/app/services/order-detail.service';
 
 @Component({
@@ -8,7 +9,11 @@ import { OrderDetailService } from 'src/app/services/order-detail.service';
 })
 export class HomeComponent implements OnInit{
 
-  constructor(private service: OrderDetailService) { }
+  constructor(
+    private service: OrderDetailService,
+    private titleService: Title) {
+      this.titleService.setTitle('Home');
+     }
   foodData: any;
 
   ngOnInit(): void {
