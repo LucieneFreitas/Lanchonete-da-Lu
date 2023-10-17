@@ -1,1 +1,22 @@
-<p>menupage works!</p>
+<section>
+  <div class="container mt-5">
+    <h1 class="text-left">Cardápio</h1>
+    <div class="row">
+
+      <div class="col-lg-6" *ngIf="menuData">
+          <img src="{{menuData[0].foodImg}}" width="100%"/>
+          <h1>{{menuData[0].foodName}}</h1>
+          <p>{{menuData[0].foodDetails}}</p>
+          <p>{{menuData[0].foodPrice | currency:'BRL'}}</p>
+      </div>
+
+        <div class="col-lg-6">
+          <form action="">
+            <input type="text" class="form-control" placeholder="Digite seu nome completo"/>
+            <input type="text" class="form-control" placeholder="Digite seu telefone"/>
+          </form>
+      </div>
+      
+    </div>
+  </div>
+</section>
